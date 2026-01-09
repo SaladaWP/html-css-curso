@@ -1,0 +1,152 @@
+Destrinchando a estrutura básica HTML: <!--digite "!" no vscode para que a estrutura seja criada automaticamente-->
+
+<!DOCTYPE html> <!--Define que este documento usa html5-->
+
+<html lang="en"> <!--Define que aqui começa o documento html, onde fica todo o conteúdo do documento HTML, lang é pra definir o idioma-->
+
+<head> <!--Aqui começa o head, onde vai ficar as configurações da página-->
+
+    <meta charset="UTF-8"> <!--Define que a página usará UTF-8 (Unicode Transformation Format - 8-bit), que aceita acentuações-->
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Mostra a página na largura real do dispositivo, sem zoom automático.-->
+	
+    <title>Meu primeiro exercício</title> <!--Titúlo da página, mostra na aba do navegador-->
+	
+</head> <!--Final do head-->
+<body> 
+    <!--Todo o conteúdo mostrado na página fica aqui, dentro do body-->
+</body>
+</html> <!--Aqui termina o documento html-->
+
+Tags são marcadores que dizem ao navegador o que cada parte do conteúdo é e como ela deve ser interpretada.
+Tags de texto básicas:
+
+<h1></h1> <!--Cria títulos(headings), com níveis de importância, que vão de 1 a 6 (h1,h2,h3...)-->
+
+<hr> <!--Cria uma linha horizontal simples-->
+
+<p></p> <!--Cria um parágrafo-->
+
+<br> <!--Quebra a linha de um texto-->
+
+<strong></strong> <!--Tudo que estiver entre strong, fica em negrito, indica importância ou relevância-->
+
+<b></b> <!--Também deixa em negrito, mas dessa vez não tem importância ou relevância, é apenas um negrito-->
+
+<em></em> <!--Tudo que estiver entre em, fica em itálico, indica ênfase-->
+
+<i></i> <!--Também deixa em itálico, mas dessa vez sem ênfase, é apenas um itálico-->
+
+<mark></mark> <!--Tudo entre mark, é marcado com um marca texto pra destacar palavras-->
+
+<small></small> <!--Toda palavra entre small, fica pequena, serve para letras miudas em contrato por exemplo, veja de forma semântica-->
+
+<big></big> <!--Toda palavra entre big, fica grande, mas a tag está obsoleta, NÃO USE, só coloquei pra mostrar que além do small, existe o big-->
+
+<del></del> <!--Cria um texto que deve ser lido mas não considerado, uma palavra riscada--> 
+
+<ins></ins> <!--Cria um texto sublinhado para mostrar que foi inserido depois-->
+
+<u></u> <!--Cria um texto apenas sublinhado-->
+
+<sup></sup> <!--Serve para criar um texto sobrescrito, um exemplo é X²+3, repare no 2-->
+
+<sub></sub> <!--Serve para criar um texto subescrito, um exemplo é H₂O, repare no 2-->
+
+<code></code> <!--Muda a fonte pra uma monoespaçada, facilitando a leitura de códigos por exemplo-->
+
+<pre></pre> <!--Essa tag faz com que tudo no texto seja considerado, incluindo quebras de linha, tab, espaço, tudo-->
+
+<q></q> <!--Transforma a frase em formato de quote, de forma semântica e visual-->
+
+<blockquote></blockquote> <!--Quando você quer fazer uma sitação de um livro, ou um quote maior que o normal, existe o atributo "cite" onde você pode colocar a fonte da sitação, mas não aparece visualmente-->
+
+<abbr title=""></abbr> <!--Quando você tem uma sigla e quer mostrar o significado dela, coloque a sigla entre as tags, e o significado em title-->
+
+<bdo></bdo> <!--Inverte um texto-->
+
+Colocando imagens no site (HTML).
+
+A tag <img> é usada para inserir imagens em uma página HTML.
+Ela é uma tag vazia, ou seja, não possui fechamento (</img>).
+
+Exemplo:
+<img src="logohtml.png" alt="Logo HTML5">
+
+src (source) define onde está a imagem (nome, formato e caminho) que pode ser um arquivo local,
+em outra pasta (Exemplo:"imagens/logocss.png") ou mesmo dentro de sites usando a URL da imagem.
+Dica importante: no VS Code, você pode usar Ctrl + Espaço entre as aspas do src para selecionar a imagem.
+
+alt (alternative) é o texto alternativo da imagem, aparece quando a imagem não carrega e ajuda em mecanismos de busca como google,
+então nunca deixe de colocar.
+
+
+
+Colocando ícones no site (HTML)
+
+Ícones (favicons) são pequenas imagens que aparecem na aba do navegador, nos favoritos, 
+no histórico do site e geralmente utilizam o formato .ico, mas pode ter outros formatos.
+
+Para adicionar um ícone ao site, utiliza-se a tag <link> com o relacionamento favicon, dentro da tag <head> do HTML.
+
+Exemplo:
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Em href deve-se colocar o caminho do ícone -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Teste de Favicon</title>
+</head>
+
+<link> --> conecta arquivos externos ao HTML
+rel="shortcut icon" --> define que o arquivo é o ícone do site
+href="favicon.ico" --> caminho do arquivo do ícone
+type="image/x-icon" -- > formato do arquivo
+
+Criação de listas (HTML).
+
+Existem listas ordenadas, não ordenadas e listas de definição.
+
+Lista ordenada possui numeração, e essa numeração pode ser alterada usando o atributo "type", também pode controlar de onde começa usando "start".
+
+Exemplo:
+<ol type="1" start="1"> <!--Type pode ser: 1 para numeros, A para letras maiúsculas, a para letras minúsculas, I para algarismos romanos maiúsculos, i para algarismos romanos minúsculos-->
+
+Exemplo de lista ordenada:
+<ol type="I"> <!--"ol", que significa "ordened list" serve pra criar e dizer que a lista é ordenada-->
+	<li>Acordar</li> <!--"li" serve para criar um elemento dentro de uma lista-->
+	<li>Ligar para o João</li>
+	<li>Tomar café</li>
+	<li>Escovar os dentes</li>
+	<li>Dormir <!--O fechamento do li é opcional-->
+</ol>
+
+Lista não ordenada não possui uma numeração, e no lugar dos números irá ter uma bolinha, o formato dela pode ser alterado.
+
+Exemplo:
+<ul type ="circle"></ul> <!--Podemos usar: disc que é a bolinha padrão, circle que é uma bolinha vazia, square que é um quadrado-->
+
+Exemplo de lista não ordenada:
+<ul type="square"> <!--"ul" significa unordened list, serve pra criar e dizer que a lista é não ordenada-->
+	<li>Pão
+	<li>Leite
+	<li>Tomate
+	<li>Alface
+</ul>
+
+Lista de definição é usada para definir termos e suas descrições, possui 3 tags principais:
+<dl></dl> <!--Define a lista de definição-->
+<dt></dt> <!--Define o termo-->
+<dd></dd> <!--Define a descrição do termo-->
+
+Exemplo de lista de definição:
+<dl>
+	<dt>HTML</dt>
+	<dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+	<dt>CSS</dt>
+	<dd>Linguagem de marcação para criação do design de um site.</dd>
+	<dt>JavaScript</dt>
+	<dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+</dl>

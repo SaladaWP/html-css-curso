@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "enchantedland";
+    src: url(fontes/EnchantedLand.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "seagramtfb";
+    src: url(fontes/Seagramtfb.ttf) format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ff8274;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(to top, #130208, #d53c6a);
+    color: white;
+    font-family: "enchantedland";
+    font-size: 20px;
+    margin: 0;
+}
+
+header>h1 {
+    margin: 0;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.432);
+}
+
+header>p {
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
+}
+
+nav>a {
+    padding: 10px 10px 0px 10px;
+    margin: 7px 7px 0px 7px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
+}
+
+nav>a:hover {
+    background-color: #ff8274;
+}
+
+main>p {
+    text-indent: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main>p>a {
+    color: #31051e;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #13020870, #d53c6a71);
+}
+
+main>p>a:hover {
+    color: #d53c6a;
+}
+
+main {
+    background-color: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px 10px 0px 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.733);
+}
+
+main>div {
+    text-align: center;
+    background-color: #130208;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main>h2 {
+    font-family: "seagramtfb";
+    color: #31051e;
+    font-size: 1.7em;
+    background-image: linear-gradient(to right, #1302087e, #d53c6a71);
+}
+
+main>h3 {
+    background-color: #130208;
+    color: white;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0px;
+}
+
+picture {
+    display: block;
+    text-align: center;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+li::marker {
+    content: "✓ ";
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+
+}
+
+
+.aprender {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: #f89185;
+    padding: 10px;
+
+}
+
+.aprender>p {
+    text-indent: 30px;
+}
+
+.aprender>ul>div>li>a{
+    color: #130208;
+}
+
+ul>div {
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+    text-align: left;
+}
+
+footer {
+    color: white;
+    background-color: #130208;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
